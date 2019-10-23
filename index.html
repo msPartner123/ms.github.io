@@ -61,6 +61,297 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-Week3 Azure-Level-200" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/10/22/Week3%20Azure-Level-200/" class="article-date">
+  <time datetime="2019-10-22T14:00:40.000Z" itemprop="datePublished">2019-10-22</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/10/22/Week3%20Azure-Level-200/">Week3 Azure-Level-200</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>第三周希望大家能够达到的学习效果：</p>
+<ul>
+<li>本周主要针对Azure虚拟网络部分</li>
+<li>进一步学习虚拟网络部分的产品及服务</li>
+<li>对Azure虚拟网络主要服务进行部署和操作</li>
+</ul>
+<h3 id="Section1-虚拟网络的简单操作"><a href="#Section1-虚拟网络的简单操作" class="headerlink" title="Section1 : 虚拟网络的简单操作"></a>Section1 : 虚拟网络的简单操作</h3><p>计划用时： 5小时</p>
+<p>本部分主要内容：</p>
+<ol>
+<li>理解虚拟网络之间的默认路由规则</li>
+<li>理解虚拟网络几个主要概念和功能：网络安全组、用户自定义路由、服务终结点</li>
+<li>理解加速网络的原理和作用</li>
+<li>掌握虚拟网络之间、虚拟网络与本地之间的连接方案</li>
+</ol>
+<p>资料连接：</p>
+<ul>
+<li>网络安全组：<a href="https://docs.azure.cn/zh-cn/virtual-network/security-overview" target="_blank" rel="noopener">https://docs.azure.cn/zh-cn/virtual-network/security-overview</a></li>
+<li>虚拟网络路由规则：<a href="https://docs.azure.cn/zh-cn/virtual-network/virtual-networks-udr-overview" target="_blank" rel="noopener">https://docs.azure.cn/zh-cn/virtual-network/virtual-networks-udr-overview</a></li>
+<li>服务终结点：<a href="https://docs.azure.cn/zh-cn/virtual-network/virtual-network-service-endpoints-overview" target="_blank" rel="noopener">https://docs.azure.cn/zh-cn/virtual-network/virtual-network-service-endpoints-overview</a></li>
+<li>加速网络：<a href="https://docs.azure.cn/zh-cn/virtual-network/create-vm-accelerated-networking-cli" target="_blank" rel="noopener">https://docs.azure.cn/zh-cn/virtual-network/create-vm-accelerated-networking-cli</a></li>
+<li>创建虚拟网络对等互连：<a href="https://docs.azure.cn/zh-cn/virtual-network/tutorial-connect-virtual-networks-portal" target="_blank" rel="noopener">https://docs.azure.cn/zh-cn/virtual-network/tutorial-connect-virtual-networks-portal</a></li>
+<li>配置VNet到VNet VPN网关连接: <a href="https://docs.azure.cn/zh-cn/vpn-gateway/vpn-gateway-howto-vnet-vnet-resource-manager-portal" target="_blank" rel="noopener">https://docs.azure.cn/zh-cn/vpn-gateway/vpn-gateway-howto-vnet-vnet-resource-manager-portal</a></li>
+</ul>
+<h3 id="Section2：虚拟网络VPN网关"><a href="#Section2：虚拟网络VPN网关" class="headerlink" title="Section2：虚拟网络VPN网关"></a>Section2：虚拟网络VPN网关</h3><p>计划用时：1.5天</p>
+<p>本部分主要内容：</p>
+<ol>
+<li>理解VPN网关的作用和原理</li>
+<li>部署VPN网关的连接：点到站点的连接，站点到站点的连接</li>
+<li>了解VPN网关的SKU（型号）</li>
+<li>了解VPN网关的监视和警报</li>
+</ol>
+<p>资料连接：</p>
+<ul>
+<li>VPN网关概述：<a href="https://docs.azure.cn/zh-cn/vpn-gateway/vpn-gateway-about-vpngateways" target="_blank" rel="noopener">https://docs.azure.cn/zh-cn/vpn-gateway/vpn-gateway-about-vpngateways</a></li>
+<li>VPN网关SKU：<a href="https://docs.azure.cn/zh-cn/vpn-gateway/vpn-gateway-about-vpn-gateway-settings" target="_blank" rel="noopener">https://docs.azure.cn/zh-cn/vpn-gateway/vpn-gateway-about-vpn-gateway-settings</a></li>
+<li>什么是边界网关协议（BGP）：<a href="https://docs.azure.cn/zh-cn/vpn-gateway/vpn-gateway-bgp-overview" target="_blank" rel="noopener">https://docs.azure.cn/zh-cn/vpn-gateway/vpn-gateway-bgp-overview</a></li>
+<li>创建基于路由的VPN网关：<a href="https://docs.azure.cn/zh-cn/vpn-gateway/create-routebased-vpn-gateway-portal" target="_blank" rel="noopener">https://docs.azure.cn/zh-cn/vpn-gateway/create-routebased-vpn-gateway-portal</a></li>
+<li>配置站点到站点VPN连接：<a href="https://docs.azure.cn/zh-cn/vpn-gateway/vpn-gateway-howto-site-to-site-resource-manager-portal" target="_blank" rel="noopener">https://docs.azure.cn/zh-cn/vpn-gateway/vpn-gateway-howto-site-to-site-resource-manager-portal</a></li>
+<li>VPN网关连接到本地VPN设备：<a href="https://docs.azure.cn/zh-cn/vpn-gateway/vpn-gateway-connect-multiple-policybased-rm-ps" target="_blank" rel="noopener">https://docs.azure.cn/zh-cn/vpn-gateway/vpn-gateway-connect-multiple-policybased-rm-ps</a></li>
+<li>配置点到站点的VPN连接：<a href="https://docs.azure.cn/zh-cn/vpn-gateway/vpn-gateway-howto-point-to-site-resource-manager-portal" target="_blank" rel="noopener">https://docs.azure.cn/zh-cn/vpn-gateway/vpn-gateway-howto-point-to-site-resource-manager-portal</a></li>
+<li>VPN网关基于指标设置警报：<a href="https://docs.azure.cn/zh-cn/vpn-gateway/vpn-gateway-howto-setup-alerts-virtual-network-gateway-metric" target="_blank" rel="noopener">https://docs.azure.cn/zh-cn/vpn-gateway/vpn-gateway-howto-setup-alerts-virtual-network-gateway-metric</a></li>
+</ul>
+<h3 id="Section3-虚拟网络ExpressRoute"><a href="#Section3-虚拟网络ExpressRoute" class="headerlink" title="Section3 虚拟网络ExpressRoute"></a>Section3 虚拟网络ExpressRoute</h3><p>计划用时：5小时</p>
+<p>本部分主要内容：</p>
+<ol>
+<li>理解ExpressRoute功能及优势</li>
+<li>掌握ExpressRoute连接模型、部署方式</li>
+<li>了解ExpressRoute在多种场景下的使用方式</li>
+</ol>
+<p>资料链接：</p>
+<ul>
+<li>ExpressRoute概述：<a href="https://docs.azure.cn/zh-cn/expressroute/expressroute-introduction" target="_blank" rel="noopener">https://docs.azure.cn/zh-cn/expressroute/expressroute-introduction</a></li>
+<li>ExpressRoute连接模型：<a href="https://docs.azure.cn/zh-cn/expressroute/expressroute-connectivity-models" target="_blank" rel="noopener">https://docs.azure.cn/zh-cn/expressroute/expressroute-connectivity-models</a></li>
+<li>ExpressRoute线路和对等互连：<a href="https://docs.azure.cn/zh-cn/expressroute/expressroute-circuit-peerings" target="_blank" rel="noopener">https://docs.azure.cn/zh-cn/expressroute/expressroute-circuit-peerings</a></li>
+<li>创建ExpressRoute：<a href="https://docs.azure.cn/zh-cn/articles/azure-operations-guide/expressroute/aog-expressroute-howto-create-through-azure-portal" target="_blank" rel="noopener">https://docs.azure.cn/zh-cn/articles/azure-operations-guide/expressroute/aog-expressroute-howto-create-through-azure-portal</a></li>
+<li>将虚拟网络连接到ExpressRoute：<a href="https://docs.azure.cn/zh-cn/expressroute/expressroute-howto-linkvnet-portal-resource-manager" target="_blank" rel="noopener">https://docs.azure.cn/zh-cn/expressroute/expressroute-howto-linkvnet-portal-resource-manager</a></li>
+<li>ExpressRoute与VPN网关共存场景：<a href="https://docs.azure.cn/zh-cn/expressroute/expressroute-howto-coexist-resource-manager" target="_blank" rel="noopener">https://docs.azure.cn/zh-cn/expressroute/expressroute-howto-coexist-resource-manager</a></li>
+</ul>
+<h3 id="Section4-负载均衡器"><a href="#Section4-负载均衡器" class="headerlink" title="Section4 负载均衡器"></a>Section4 负载均衡器</h3><p>计划用时：1天</p>
+<p>本部分主要内容：</p>
+<ol>
+<li>理解负载均衡器的原理、作用和使用场景</li>
+<li>熟悉不同SKU负载均衡器之间的区别和限制</li>
+<li>掌握负载均衡器的部署方式</li>
+</ol>
+<p>资料链接：</p>
+<ul>
+<li>负载均衡器的概述：<a href="https://docs.azure.cn/zh-cn/load-balancer/load-balancer-overview" target="_blank" rel="noopener">https://docs.azure.cn/zh-cn/load-balancer/load-balancer-overview</a></li>
+<li>负载均衡器SKU（基本和标准）对比：<a href="https://docs.azure.cn/zh-cn/load-balancer/load-balancer-standard-overview" target="_blank" rel="noopener">https://docs.azure.cn/zh-cn/load-balancer/load-balancer-standard-overview</a></li>
+<li>标准负载均衡器的创建：<a href="https://docs.azure.cn/zh-cn/load-balancer/quickstart-load-balancer-standard-public-portal" target="_blank" rel="noopener">https://docs.azure.cn/zh-cn/load-balancer/quickstart-load-balancer-standard-public-portal</a></li>
+<li>在负载均衡器中配置端口转发：<a href="https://docs.azure.cn/zh-cn/load-balancer/tutorial-load-balancer-port-forwarding-portal" target="_blank" rel="noopener">https://docs.azure.cn/zh-cn/load-balancer/tutorial-load-balancer-port-forwarding-portal</a></li>
+<li>负载均衡器运行状况探测原理：<a href="https://docs.azure.cn/zh-cn/load-balancer/load-balancer-custom-probe-overview" target="_blank" rel="noopener">https://docs.azure.cn/zh-cn/load-balancer/load-balancer-custom-probe-overview</a></li>
+<li>负载均衡器的分配模式：<a href="https://docs.azure.cn/zh-cn/load-balancer/load-balancer-distribution-mode" target="_blank" rel="noopener">https://docs.azure.cn/zh-cn/load-balancer/load-balancer-distribution-mode</a></li>
+<li>Azure中的负载均衡服务：<a href="https://docs.azure.cn/zh-cn/traffic-manager/traffic-manager-load-balancing-azure?toc=%2fload-balancer%2ftoc.json" target="_blank" rel="noopener">https://docs.azure.cn/zh-cn/traffic-manager/traffic-manager-load-balancing-azure?toc=%2fload-balancer%2ftoc.json</a></li>
+</ul>
+<h3 id="Section5-应用程序网关"><a href="#Section5-应用程序网关" class="headerlink" title="Section5 应用程序网关"></a>Section5 应用程序网关</h3><p>计划用时：5小时</p>
+<p>本部分主要内容：</p>
+<ol>
+<li>理解应用程序网关的工作原理和使用场景</li>
+<li>掌握应用程序网关的SSL配置、WAF配置</li>
+<li>了解应用程序网关的运行状况探测</li>
+</ol>
+<p>资料链接</p>
+<ul>
+<li>应用程序网关概述：<a href="https://docs.azure.cn/zh-cn/application-gateway/overview" target="_blank" rel="noopener">https://docs.azure.cn/zh-cn/application-gateway/overview</a></li>
+<li>应用程序网关工作原理：<a href="https://docs.azure.cn/zh-cn/application-gateway/how-application-gateway-works" target="_blank" rel="noopener">https://docs.azure.cn/zh-cn/application-gateway/how-application-gateway-works</a></li>
+<li>应用程序网关组件：<a href="https://docs.azure.cn/zh-cn/application-gateway/application-gateway-components" target="_blank" rel="noopener">https://docs.azure.cn/zh-cn/application-gateway/application-gateway-components</a></li>
+<li>创建应用程序网关：<a href="https://docs.azure.cn/zh-cn/application-gateway/quick-create-portal" target="_blank" rel="noopener">https://docs.azure.cn/zh-cn/application-gateway/quick-create-portal</a></li>
+<li>SSL配置：<a href="https://docs.azure.cn/zh-cn/application-gateway/ssl-overview" target="_blank" rel="noopener">https://docs.azure.cn/zh-cn/application-gateway/ssl-overview</a></li>
+<li>WAF配置：<a href="https://docs.azure.cn/zh-cn/application-gateway/waf-overview" target="_blank" rel="noopener">https://docs.azure.cn/zh-cn/application-gateway/waf-overview</a></li>
+<li>运行状况探测：<a href="https://docs.azure.cn/zh-cn/application-gateway/application-gateway-probe-overview" target="_blank" rel="noopener">https://docs.azure.cn/zh-cn/application-gateway/application-gateway-probe-overview</a></li>
+</ul>
+<h3 id="Section6-流量管理器"><a href="#Section6-流量管理器" class="headerlink" title="Section6  流量管理器"></a>Section6  流量管理器</h3><p>计划用时：2小时</p>
+<p>主要内容：</p>
+<ol>
+<li>理解流量管理器的作用和工作原理</li>
+<li>掌握流量管理器的创建和使用场景</li>
+</ol>
+<p>资料链接：</p>
+<ul>
+<li>流量管理器概述：<a href="https://docs.azure.cn/zh-cn/traffic-manager/traffic-manager-overview" target="_blank" rel="noopener">https://docs.azure.cn/zh-cn/traffic-manager/traffic-manager-overview</a></li>
+<li>流量管理器工作原理：<a href="https://docs.azure.cn/zh-cn/traffic-manager/traffic-manager-how-it-works" target="_blank" rel="noopener">https://docs.azure.cn/zh-cn/traffic-manager/traffic-manager-how-it-works</a></li>
+<li>流量管理器的创建：<a href="https://docs.azure.cn/zh-cn/traffic-manager/quickstart-create-traffic-manager-profile" target="_blank" rel="noopener">https://docs.azure.cn/zh-cn/traffic-manager/quickstart-create-traffic-manager-profile</a></li>
+</ul>
+<h3 id="section7-CDN网络"><a href="#section7-CDN网络" class="headerlink" title="section7 CDN网络"></a>section7 CDN网络</h3><p>计划用时：1小时</p>
+<p>主要内容:</p>
+<ol>
+<li>理解CDN的功能及优势</li>
+<li>了解CND网络的创建</li>
+<li>了解CDN网络的管理方式</li>
+</ol>
+<p>资料链接：</p>
+<ul>
+<li>CDN网络概述：<a href="https://docs.azure.cn/zh-cn/cdn/cdn-overview" target="_blank" rel="noopener">https://docs.azure.cn/zh-cn/cdn/cdn-overview</a></li>
+<li>节点分布：<a href="https://docs.azure.cn/zh-cn/cdn/cdn-pops" target="_blank" rel="noopener">https://docs.azure.cn/zh-cn/cdn/cdn-pops</a></li>
+<li>CDN网络的创建：<a href="https://docs.azure.cn/zh-cn/cdn/cdn-how-to-use" target="_blank" rel="noopener">https://docs.azure.cn/zh-cn/cdn/cdn-how-to-use</a></li>
+<li>CDN网络控制台：<a href="https://docs.azure.cn/zh-cn/cdn/cdn-management-v2-portal-how-to-use" target="_blank" rel="noopener">https://docs.azure.cn/zh-cn/cdn/cdn-management-v2-portal-how-to-use</a></li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://mspartner123.github.io/ms.github.io/2019/10/22/Week3%20Azure-Level-200/" data-id="ck232gnr10000skh455pd8p84" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-Week2 Azure-Level-200" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/10/22/Week2%20Azure-Level-200/" class="article-date">
+  <time datetime="2019-10-22T14:00:40.000Z" itemprop="datePublished">2019-10-22</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/10/22/Week2%20Azure-Level-200/">Week2 Azure-Level-200</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>第二周希望大家能够达到的学习效果：</p>
+<ul>
+<li>以动手实验为主，学习Azure命令行工具的使用</li>
+<li>能够部署Azure虚拟机的主要服务</li>
+<li>能够进一步掌握Azure存储服务，并进行简单的操作</li>
+<li>掌握Azure备份服务的概念和相关操作</li>
+<li>掌握Sie Recovery站点恢复服务的概念和相关操作</li>
+</ul>
+<h3 id="Section1-Azure-CLI的安装和使用"><a href="#Section1-Azure-CLI的安装和使用" class="headerlink" title="Section1 : Azure CLI的安装和使用"></a>Section1 : Azure CLI的安装和使用</h3><p>计划用时： 2小时</p>
+<p>本部分主要内容：</p>
+<ol>
+<li>学习Azure CLI &amp; Powershell的安装和使用</li>
+<li>利用Azure CLI &amp; Powershell部署虚拟机</li>
+</ol>
+<p>资料连接：</p>
+<ul>
+<li>Azure CLI安装：<a href="https://docs.microsoft.com/zh-cn/cli/azure/install-azure-cli?view=azure-cli-latest" target="_blank" rel="noopener">https://docs.microsoft.com/zh-cn/cli/azure/install-azure-cli?view=azure-cli-latest</a></li>
+<li>Azure Powershell的安装：<a href="https://docs.microsoft.com/zh-cn/powershell/azure/install-az-ps?view=azps-2.8.0" target="_blank" rel="noopener">https://docs.microsoft.com/zh-cn/powershell/azure/install-az-ps?view=azps-2.8.0</a></li>
+<li>利用Azure CLI创建Linux虚拟机： <a href="https://docs.microsoft.com/zh-cn/azure/virtual-machines/linux/quick-create-cli" target="_blank" rel="noopener">https://docs.microsoft.com/zh-cn/azure/virtual-machines/linux/quick-create-cli</a></li>
+<li>利用Powershell创建Linux虚拟机：<a href="https://docs.microsoft.com/zh-cn/azure/virtual-machines/linux/quick-create-powershell" target="_blank" rel="noopener">https://docs.microsoft.com/zh-cn/azure/virtual-machines/linux/quick-create-powershell</a></li>
+</ul>
+<h3 id="Section2：虚拟机简单操作"><a href="#Section2：虚拟机简单操作" class="headerlink" title="Section2：虚拟机简单操作"></a>Section2：虚拟机简单操作</h3><p>计划用时：4小时</p>
+<p>本部分主要内容：</p>
+<ol>
+<li>为虚拟机创建并附加磁盘</li>
+<li>创建虚拟机映像</li>
+<li>为虚拟机配置可用性集</li>
+<li>创建虚拟机规模集</li>
+</ol>
+<p>资料连接：</p>
+<ul>
+<li>虚拟机磁盘管理：<a href="https://docs.microsoft.com/zh-cn/azure/virtual-machines/linux/tutorial-manage-disks" target="_blank" rel="noopener">https://docs.microsoft.com/zh-cn/azure/virtual-machines/linux/tutorial-manage-disks</a></li>
+<li>创建VM映像：<a href="https://docs.microsoft.com/zh-cn/azure/virtual-machines/linux/tutorial-custom-images" target="_blank" rel="noopener">https://docs.microsoft.com/zh-cn/azure/virtual-machines/linux/tutorial-custom-images</a></li>
+<li>将虚拟机部署在可用性集中: <a href="https://docs.microsoft.com/zh-cn/azure/virtual-machines/linux/tutorial-availability-sets" target="_blank" rel="noopener">https://docs.microsoft.com/zh-cn/azure/virtual-machines/linux/tutorial-availability-sets</a></li>
+<li>创建规模集：<a href="https://docs.microsoft.com/zh-cn/azure/virtual-machines/linux/tutorial-create-vmss" target="_blank" rel="noopener">https://docs.microsoft.com/zh-cn/azure/virtual-machines/linux/tutorial-create-vmss</a></li>
+</ul>
+<h3 id="Section3-Azure存储简单操作"><a href="#Section3-Azure存储简单操作" class="headerlink" title="Section3 Azure存储简单操作"></a>Section3 Azure存储简单操作</h3><p>计划用时：2天</p>
+<p>本部分主要内容：week1中我们已经了解到Azure存储的类型和它们之间的区别，本周要对每种存储类型进行深入了解，并学习如何对这些Azure存储进行简单操作。</p>
+<ol>
+<li>掌握Azure Blob存储的数据冗余、访问层&amp;性能层</li>
+<li>学习Azure Blob存储的简单操作，学习使用AzCopy工具，并将本地数据迁移到云存储</li>
+<li>存储的数据迁移和导入导出方案</li>
+<li>学习Azure文件存储的简单操作</li>
+</ol>
+<p>资料链接：</p>
+<ul>
+<li><p>Azure存储的数据冗余：<a href="https://docs.microsoft.com/zh-cn/azure/storage/common/storage-redundancy?toc=%2fazure%2fstorage%2fblobs%2ftoc.json" target="_blank" rel="noopener">https://docs.microsoft.com/zh-cn/azure/storage/common/storage-redundancy?toc=%2fazure%2fstorage%2fblobs%2ftoc.json</a></p>
+</li>
+<li><p>Blob存储的访问层&amp;性能层：</p>
+<p>访问层：<a href="https://docs.microsoft.com/zh-cn/azure/storage/blobs/storage-blob-storage-tiers" target="_blank" rel="noopener">https://docs.microsoft.com/zh-cn/azure/storage/blobs/storage-blob-storage-tiers</a></p>
+<p>性能层：<a href="https://docs.microsoft.com/zh-cn/azure/storage/blobs/storage-blob-performance-tiers" target="_blank" rel="noopener">https://docs.microsoft.com/zh-cn/azure/storage/blobs/storage-blob-performance-tiers</a></p>
+</li>
+<li><p>使用Blob存储在云中上传图片：<a href="https://docs.microsoft.com/zh-cn/azure/storage/blobs/storage-upload-process-images?tabs=dotnet" target="_blank" rel="noopener">https://docs.microsoft.com/zh-cn/azure/storage/blobs/storage-upload-process-images?tabs=dotnet</a></p>
+</li>
+<li><p>将本地数据迁移到云存储（AzCopy工具的使用）：</p>
+<p><a href="https://docs.microsoft.com/zh-cn/azure/storage/common/storage-use-azcopy-migrate-on-premises-data?toc=%2Fazure%2Fstorage%2Fblobs%2Ftoc.json&amp;tabs=windows" target="_blank" rel="noopener">https://docs.microsoft.com/zh-cn/azure/storage/common/storage-use-azcopy-migrate-on-premises-data?toc=%2Fazure%2Fstorage%2Fblobs%2Ftoc.json&amp;tabs=windows</a></p>
+</li>
+<li><p>数据传输解决方案：<a href="https://docs.microsoft.com/zh-cn/azure/storage/common/storage-choose-data-transfer-solution?toc=%2fazure%2fstorage%2fblobs%2ftoc.json" target="_blank" rel="noopener">https://docs.microsoft.com/zh-cn/azure/storage/common/storage-choose-data-transfer-solution?toc=%2fazure%2fstorage%2fblobs%2ftoc.json</a></p>
+</li>
+<li><p>导入导出数据：<a href="https://docs.microsoft.com/zh-cn/azure/storage/common/storage-import-export-service?toc=%2fazure%2fstorage%2fblobs%2ftoc.json" target="_blank" rel="noopener">https://docs.microsoft.com/zh-cn/azure/storage/common/storage-import-export-service?toc=%2fazure%2fstorage%2fblobs%2ftoc.json</a></p>
+</li>
+<li><p>使用Azure文件同步扩展Windows文件服务器：<a href="https://docs.microsoft.com/zh-cn/azure/storage/files/storage-sync-files-extend-servers" target="_blank" rel="noopener">https://docs.microsoft.com/zh-cn/azure/storage/files/storage-sync-files-extend-servers</a></p>
+</li>
+<li><p>Azure队列存储的使用：<a href="https://docs.microsoft.com/zh-cn/azure/storage/queues/storage-tutorial-queues?toc=%2fazure%2fstorage%2fqueues%2ftoc.json" target="_blank" rel="noopener">https://docs.microsoft.com/zh-cn/azure/storage/queues/storage-tutorial-queues?toc=%2fazure%2fstorage%2fqueues%2ftoc.json</a></p>
+</li>
+<li><p>Azure表存储的使用：<a href="https://docs.microsoft.com/zh-cn/azure/storage/tables/table-storage-quickstart-portal" target="_blank" rel="noopener">https://docs.microsoft.com/zh-cn/azure/storage/tables/table-storage-quickstart-portal</a></p>
+</li>
+</ul>
+<h3 id="Section4-Azure备份服务"><a href="#Section4-Azure备份服务" class="headerlink" title="Section4 Azure备份服务"></a>Section4 Azure备份服务</h3><p>计划用时：6小时</p>
+<p>本部分主要内容：</p>
+<ol>
+<li>掌握Azure备份服务的功能和特别点</li>
+<li>学习Azure备份服务的简单使用</li>
+<li>了解Azaure备份服务器</li>
+</ol>
+<p>资料链接：</p>
+<ul>
+<li>Azure备份服务介绍：<a href="https://docs.microsoft.com/zh-cn/azure/backup/backup-overview" target="_blank" rel="noopener">https://docs.microsoft.com/zh-cn/azure/backup/backup-overview</a></li>
+<li>Azure备份本地服务的方案大致有以下两种， 参考链接 <a href="https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.azure.cn%2Fzh-cn%2Fbackup%2Fbackup-overview%23what-backup-scenarios-are-supported&data=02|01|Yi.Liang%40microsoft.com|c93ce11578f04643513708d756c99375|72f988bf86f141af91ab2d7cd011db47|1|0|637073296109259273&sdata=Q5vEeBDyQ0aHLbJ6ZKzCLYC5n12fU%2BdQWJ6DXWXV3OQ%3D&reserved=0" target="_blank" rel="noopener">https://docs.azure.cn/zh-cn/backup/backup-overview#what-backup-scenarios-are-supported</a>   </li>
+<li>选择哪种备份方案，主要基于您需要备份什么内容？ 可参考《我应该使用哪个备份代理？》 <a href="https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.azure.cn%2Fzh-cn%2Fbackup%2Fbackup-overview%23which-backup-agent-should-i-use&data=02|01|Yi.Liang%40microsoft.com|c93ce11578f04643513708d756c99375|72f988bf86f141af91ab2d7cd011db47|1|0|637073296109269265&sdata=XtvSH478qH3YTj9gOYhbitQSR8N%2BZKVwbcT2bT4GgXE%3D&reserved=0" target="_blank" rel="noopener">https://docs.azure.cn/zh-cn/backup/backup-overview#which-backup-agent-should-i-use</a>  </li>
+<li>关于Azure备份服务器（MABS）信息，您可参考 ： <a href="https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.azure.cn%2Fzh-cn%2Fbackup%2Fbackup-azure-microsoft-azure-backup&data=02|01|Yi.Liang%40microsoft.com|c93ce11578f04643513708d756c99375|72f988bf86f141af91ab2d7cd011db47|1|0|637073296109279269&sdata=mglt%2FaTPxrUkXtJwxOxLLX3dP3%2B0xBuXi5%2BU4I140JE%3D&reserved=0" target="_blank" rel="noopener">https://docs.azure.cn/zh-cn/backup/backup-azure-microsoft-azure-backup</a> </li>
+<li>在Azure VM上备份SQL Server：<a href="https://docs.microsoft.com/zh-cn/azure/backup/tutorial-sql-backup" target="_blank" rel="noopener">https://docs.microsoft.com/zh-cn/azure/backup/tutorial-sql-backup</a></li>
+<li>备份Azure文件共享：<a href="https://docs.microsoft.com/zh-cn/azure/backup/tutorial-backup-azure-files" target="_blank" rel="noopener">https://docs.microsoft.com/zh-cn/azure/backup/tutorial-backup-azure-files</a></li>
+</ul>
+<h3 id="Section5-Azure-站点恢复"><a href="#Section5-Azure-站点恢复" class="headerlink" title="Section5 Azure 站点恢复"></a>Section5 Azure 站点恢复</h3><p>计划用时：5小时</p>
+<p>本部分主要内容：</p>
+<ol>
+<li>掌握Azure Site Recovery服务的功能和作用</li>
+<li>学习Azure上的灾难恢复和故障转移的部署和操作</li>
+<li>学习这对本地虚拟机的灾难恢复和故障转移的部署的操作</li>
+<li>使用Powershell配置灾难恢复的自动化操作</li>
+</ol>
+<p>学习资料：</p>
+<ul>
+<li>Azure Site Recovery服务概述：<a href="https://docs.azure.cn/zh-cn/site-recovery/site-recovery-overview" target="_blank" rel="noopener">https://docs.azure.cn/zh-cn/site-recovery/site-recovery-overview</a></li>
+<li>Azure上站点恢复的配置：<a href="https://docs.azure.cn/zh-cn/site-recovery/azure-to-azure-quickstart" target="_blank" rel="noopener">https://docs.azure.cn/zh-cn/site-recovery/azure-to-azure-quickstart</a></li>
+<li>Azure区域之间的故障转移：<a href="https://docs.azure.cn/zh-cn/site-recovery/azure-to-azure-tutorial-failover-failback" target="_blank" rel="noopener">https://docs.azure.cn/zh-cn/site-recovery/azure-to-azure-tutorial-failover-failback</a></li>
+<li>VMware/Hyper-V的灾难恢复演练: <a href="https://docs.azure.cn/zh-cn/site-recovery/tutorial-dr-drill-azure" target="_blank" rel="noopener">https://docs.azure.cn/zh-cn/site-recovery/tutorial-dr-drill-azure</a></li>
+<li>将本地计算机迁移到Azure：<a href="https://docs.azure.cn/zh-cn/site-recovery/migrate-tutorial-on-premises-azure" target="_blank" rel="noopener">https://docs.azure.cn/zh-cn/site-recovery/migrate-tutorial-on-premises-azure</a></li>
+<li>灾难恢复的自动化操作：<a href="https://docs.azure.cn/zh-cn/site-recovery/azure-to-azure-powershell" target="_blank" rel="noopener">https://docs.azure.cn/zh-cn/site-recovery/azure-to-azure-powershell</a></li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://mspartner123.github.io/ms.github.io/2019/10/22/Week2%20Azure-Level-200/" data-id="ck232gnr80002skh4btq4cqme" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-Week1 Azure-Level-100" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2019/10/22/Week1%20Azure-Level-100/" class="article-date">
@@ -207,298 +498,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://mspartner123.github.io/ms.github.io/2019/10/22/Week1%20Azure-Level-100/" data-id="ck232acyg000074h40kmg61jx" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-Week2 Azure-Level-200" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/10/22/Week2%20Azure-Level-200/" class="article-date">
-  <time datetime="2019-10-22T14:00:40.000Z" itemprop="datePublished">2019-10-22</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/10/22/Week2%20Azure-Level-200/">Week2 Azure-Level-200</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>第二周希望大家能够达到的学习效果：</p>
-<ul>
-<li>以动手实验为主，学习Azure命令行工具的使用</li>
-<li>能够部署Azure虚拟机的主要服务</li>
-<li>能够进一步掌握Azure存储服务，并进行简单的操作</li>
-<li>掌握Azure备份服务的概念和相关操作</li>
-<li>掌握Sie Recovery站点恢复服务的概念和相关操作</li>
-</ul>
-<h3 id="Section1-Azure-CLI的安装和使用"><a href="#Section1-Azure-CLI的安装和使用" class="headerlink" title="Section1 : Azure CLI的安装和使用"></a>Section1 : Azure CLI的安装和使用</h3><p>计划用时： 2小时</p>
-<p>本部分主要内容：</p>
-<ol>
-<li>学习Azure CLI &amp; Powershell的安装和使用</li>
-<li>利用Azure CLI &amp; Powershell部署虚拟机</li>
-</ol>
-<p>资料连接：</p>
-<ul>
-<li>Azure CLI安装：<a href="https://docs.microsoft.com/zh-cn/cli/azure/install-azure-cli?view=azure-cli-latest" target="_blank" rel="noopener">https://docs.microsoft.com/zh-cn/cli/azure/install-azure-cli?view=azure-cli-latest</a></li>
-<li>Azure Powershell的安装：<a href="https://docs.microsoft.com/zh-cn/powershell/azure/install-az-ps?view=azps-2.8.0" target="_blank" rel="noopener">https://docs.microsoft.com/zh-cn/powershell/azure/install-az-ps?view=azps-2.8.0</a></li>
-<li>利用Azure CLI创建Linux虚拟机： <a href="https://docs.microsoft.com/zh-cn/azure/virtual-machines/linux/quick-create-cli" target="_blank" rel="noopener">https://docs.microsoft.com/zh-cn/azure/virtual-machines/linux/quick-create-cli</a></li>
-<li>利用Powershell创建Linux虚拟机：<a href="https://docs.microsoft.com/zh-cn/azure/virtual-machines/linux/quick-create-powershell" target="_blank" rel="noopener">https://docs.microsoft.com/zh-cn/azure/virtual-machines/linux/quick-create-powershell</a></li>
-</ul>
-<h3 id="Section2：虚拟机简单操作"><a href="#Section2：虚拟机简单操作" class="headerlink" title="Section2：虚拟机简单操作"></a>Section2：虚拟机简单操作</h3><p>计划用时：4小时</p>
-<p>本部分主要内容：</p>
-<ol>
-<li>为虚拟机创建并附加磁盘</li>
-<li>创建虚拟机映像</li>
-<li>为虚拟机配置可用性集</li>
-<li>创建虚拟机规模集</li>
-</ol>
-<p>资料连接：</p>
-<ul>
-<li>虚拟机磁盘管理：<a href="https://docs.microsoft.com/zh-cn/azure/virtual-machines/linux/tutorial-manage-disks" target="_blank" rel="noopener">https://docs.microsoft.com/zh-cn/azure/virtual-machines/linux/tutorial-manage-disks</a></li>
-<li>创建VM映像：<a href="https://docs.microsoft.com/zh-cn/azure/virtual-machines/linux/tutorial-custom-images" target="_blank" rel="noopener">https://docs.microsoft.com/zh-cn/azure/virtual-machines/linux/tutorial-custom-images</a></li>
-<li>将虚拟机部署在可用性集中: <a href="https://docs.microsoft.com/zh-cn/azure/virtual-machines/linux/tutorial-availability-sets" target="_blank" rel="noopener">https://docs.microsoft.com/zh-cn/azure/virtual-machines/linux/tutorial-availability-sets</a></li>
-<li>创建规模集：<a href="https://docs.microsoft.com/zh-cn/azure/virtual-machines/linux/tutorial-create-vmss" target="_blank" rel="noopener">https://docs.microsoft.com/zh-cn/azure/virtual-machines/linux/tutorial-create-vmss</a></li>
-</ul>
-<h3 id="Section3-Azure存储简单操作"><a href="#Section3-Azure存储简单操作" class="headerlink" title="Section3 Azure存储简单操作"></a>Section3 Azure存储简单操作</h3><p>计划用时：2天</p>
-<p>本部分主要内容：week1中我们已经了解到Azure存储的类型和它们之间的区别，本周要对每种存储类型进行深入了解，并学习如何对这些Azure存储进行简单操作。</p>
-<ol>
-<li>掌握Azure Blob存储的数据冗余、访问层&amp;性能层</li>
-<li>学习Azure Blob存储的简单操作，学习使用AzCopy工具，并将本地数据迁移到云存储</li>
-<li>存储的数据迁移和导入导出方案</li>
-<li>学习Azure文件存储的简单操作</li>
-</ol>
-<p>资料链接：</p>
-<ul>
-<li><p>Azure存储的数据冗余：<a href="https://docs.microsoft.com/zh-cn/azure/storage/common/storage-redundancy?toc=%2fazure%2fstorage%2fblobs%2ftoc.json" target="_blank" rel="noopener">https://docs.microsoft.com/zh-cn/azure/storage/common/storage-redundancy?toc=%2fazure%2fstorage%2fblobs%2ftoc.json</a></p>
-</li>
-<li><p>Blob存储的访问层&amp;性能层：</p>
-<p>访问层：<a href="https://docs.microsoft.com/zh-cn/azure/storage/blobs/storage-blob-storage-tiers" target="_blank" rel="noopener">https://docs.microsoft.com/zh-cn/azure/storage/blobs/storage-blob-storage-tiers</a></p>
-<p>性能层：<a href="https://docs.microsoft.com/zh-cn/azure/storage/blobs/storage-blob-performance-tiers" target="_blank" rel="noopener">https://docs.microsoft.com/zh-cn/azure/storage/blobs/storage-blob-performance-tiers</a></p>
-</li>
-<li><p>使用Blob存储在云中上传图片：<a href="https://docs.microsoft.com/zh-cn/azure/storage/blobs/storage-upload-process-images?tabs=dotnet" target="_blank" rel="noopener">https://docs.microsoft.com/zh-cn/azure/storage/blobs/storage-upload-process-images?tabs=dotnet</a></p>
-</li>
-<li><p>将本地数据迁移到云存储（AzCopy工具的使用）：</p>
-<p><a href="https://docs.microsoft.com/zh-cn/azure/storage/common/storage-use-azcopy-migrate-on-premises-data?toc=%2Fazure%2Fstorage%2Fblobs%2Ftoc.json&amp;tabs=windows" target="_blank" rel="noopener">https://docs.microsoft.com/zh-cn/azure/storage/common/storage-use-azcopy-migrate-on-premises-data?toc=%2Fazure%2Fstorage%2Fblobs%2Ftoc.json&amp;tabs=windows</a></p>
-</li>
-<li><p>数据传输解决方案：<a href="https://docs.microsoft.com/zh-cn/azure/storage/common/storage-choose-data-transfer-solution?toc=%2fazure%2fstorage%2fblobs%2ftoc.json" target="_blank" rel="noopener">https://docs.microsoft.com/zh-cn/azure/storage/common/storage-choose-data-transfer-solution?toc=%2fazure%2fstorage%2fblobs%2ftoc.json</a></p>
-</li>
-<li><p>导入导出数据：<a href="https://docs.microsoft.com/zh-cn/azure/storage/common/storage-import-export-service?toc=%2fazure%2fstorage%2fblobs%2ftoc.json" target="_blank" rel="noopener">https://docs.microsoft.com/zh-cn/azure/storage/common/storage-import-export-service?toc=%2fazure%2fstorage%2fblobs%2ftoc.json</a></p>
-</li>
-<li><p>使用Azure文件同步扩展Windows文件服务器：<a href="https://docs.microsoft.com/zh-cn/azure/storage/files/storage-sync-files-extend-servers" target="_blank" rel="noopener">https://docs.microsoft.com/zh-cn/azure/storage/files/storage-sync-files-extend-servers</a></p>
-</li>
-<li><p>Azure队列存储的使用：<a href="https://docs.microsoft.com/zh-cn/azure/storage/queues/storage-tutorial-queues?toc=%2fazure%2fstorage%2fqueues%2ftoc.json" target="_blank" rel="noopener">https://docs.microsoft.com/zh-cn/azure/storage/queues/storage-tutorial-queues?toc=%2fazure%2fstorage%2fqueues%2ftoc.json</a></p>
-</li>
-<li><p>Azure表存储的使用：<a href="https://docs.microsoft.com/zh-cn/azure/storage/tables/table-storage-quickstart-portal" target="_blank" rel="noopener">https://docs.microsoft.com/zh-cn/azure/storage/tables/table-storage-quickstart-portal</a></p>
-</li>
-</ul>
-<h3 id="Section4-Azure备份服务"><a href="#Section4-Azure备份服务" class="headerlink" title="Section4 Azure备份服务"></a>Section4 Azure备份服务</h3><p>计划用时：6小时</p>
-<p>本部分主要内容：</p>
-<ol>
-<li>掌握Azure备份服务的功能和特别点</li>
-<li>学习Azure备份服务的简单使用</li>
-<li>了解Azaure备份服务器</li>
-</ol>
-<p>资料链接：</p>
-<ul>
-<li>Azure备份服务介绍：<a href="https://docs.microsoft.com/zh-cn/azure/backup/backup-overview" target="_blank" rel="noopener">https://docs.microsoft.com/zh-cn/azure/backup/backup-overview</a></li>
-<li>Azure备份本地服务的方案大致有以下两种， 参考链接 <a href="https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.azure.cn%2Fzh-cn%2Fbackup%2Fbackup-overview%23what-backup-scenarios-are-supported&data=02|01|Yi.Liang%40microsoft.com|c93ce11578f04643513708d756c99375|72f988bf86f141af91ab2d7cd011db47|1|0|637073296109259273&sdata=Q5vEeBDyQ0aHLbJ6ZKzCLYC5n12fU%2BdQWJ6DXWXV3OQ%3D&reserved=0" target="_blank" rel="noopener">https://docs.azure.cn/zh-cn/backup/backup-overview#what-backup-scenarios-are-supported</a>   </li>
-<li>选择哪种备份方案，主要基于您需要备份什么内容？ 可参考《我应该使用哪个备份代理？》 <a href="https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.azure.cn%2Fzh-cn%2Fbackup%2Fbackup-overview%23which-backup-agent-should-i-use&data=02|01|Yi.Liang%40microsoft.com|c93ce11578f04643513708d756c99375|72f988bf86f141af91ab2d7cd011db47|1|0|637073296109269265&sdata=XtvSH478qH3YTj9gOYhbitQSR8N%2BZKVwbcT2bT4GgXE%3D&reserved=0" target="_blank" rel="noopener">https://docs.azure.cn/zh-cn/backup/backup-overview#which-backup-agent-should-i-use</a>  </li>
-<li>关于Azure备份服务器（MABS）信息，您可参考 ： <a href="https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.azure.cn%2Fzh-cn%2Fbackup%2Fbackup-azure-microsoft-azure-backup&data=02|01|Yi.Liang%40microsoft.com|c93ce11578f04643513708d756c99375|72f988bf86f141af91ab2d7cd011db47|1|0|637073296109279269&sdata=mglt%2FaTPxrUkXtJwxOxLLX3dP3%2B0xBuXi5%2BU4I140JE%3D&reserved=0" target="_blank" rel="noopener">https://docs.azure.cn/zh-cn/backup/backup-azure-microsoft-azure-backup</a> </li>
-<li>在Azure VM上备份SQL Server：<a href="https://docs.microsoft.com/zh-cn/azure/backup/tutorial-sql-backup" target="_blank" rel="noopener">https://docs.microsoft.com/zh-cn/azure/backup/tutorial-sql-backup</a></li>
-<li>备份Azure文件共享：<a href="https://docs.microsoft.com/zh-cn/azure/backup/tutorial-backup-azure-files" target="_blank" rel="noopener">https://docs.microsoft.com/zh-cn/azure/backup/tutorial-backup-azure-files</a></li>
-</ul>
-<h3 id="Section5-Azure-站点恢复"><a href="#Section5-Azure-站点恢复" class="headerlink" title="Section5 Azure 站点恢复"></a>Section5 Azure 站点恢复</h3><p>计划用时：5小时</p>
-<p>本部分主要内容：</p>
-<ol>
-<li>掌握Azure Site Recovery服务的功能和作用</li>
-<li>学习Azure上的灾难恢复和故障转移的部署和操作</li>
-<li>学习这对本地虚拟机的灾难恢复和故障转移的部署的操作</li>
-<li>使用Powershell配置灾难恢复的自动化操作</li>
-</ol>
-<p>学习资料：</p>
-<ul>
-<li>Azure Site Recovery服务概述：<a href="https://docs.azure.cn/zh-cn/site-recovery/site-recovery-overview" target="_blank" rel="noopener">https://docs.azure.cn/zh-cn/site-recovery/site-recovery-overview</a></li>
-<li>Azure上站点恢复的配置：<a href="https://docs.azure.cn/zh-cn/site-recovery/azure-to-azure-quickstart" target="_blank" rel="noopener">https://docs.azure.cn/zh-cn/site-recovery/azure-to-azure-quickstart</a></li>
-<li>Azure区域之间的故障转移：<a href="https://docs.azure.cn/zh-cn/site-recovery/azure-to-azure-tutorial-failover-failback" target="_blank" rel="noopener">https://docs.azure.cn/zh-cn/site-recovery/azure-to-azure-tutorial-failover-failback</a></li>
-<li>VMware/Hyper-V的灾难恢复演练: <a href="https://docs.azure.cn/zh-cn/site-recovery/tutorial-dr-drill-azure" target="_blank" rel="noopener">https://docs.azure.cn/zh-cn/site-recovery/tutorial-dr-drill-azure</a></li>
-<li>将本地计算机迁移到Azure：<a href="https://docs.azure.cn/zh-cn/site-recovery/migrate-tutorial-on-premises-azure" target="_blank" rel="noopener">https://docs.azure.cn/zh-cn/site-recovery/migrate-tutorial-on-premises-azure</a></li>
-<li>灾难恢复的自动化操作：<a href="https://docs.azure.cn/zh-cn/site-recovery/azure-to-azure-powershell" target="_blank" rel="noopener">https://docs.azure.cn/zh-cn/site-recovery/azure-to-azure-powershell</a></li>
-</ul>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://mspartner123.github.io/ms.github.io/2019/10/22/Week2%20Azure-Level-200/" data-id="ck232acyo000274h4hiyc6xti" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-Week3 Azure-Level-200" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/10/22/Week3%20Azure-Level-200/" class="article-date">
-  <time datetime="2019-10-22T14:00:40.000Z" itemprop="datePublished">2019-10-22</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/10/22/Week3%20Azure-Level-200/">Week3 Azure-Level-200</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>第三周希望大家能够达到的学习效果：</p>
-<ul>
-<li>本周主要针对Azure虚拟网络部分</li>
-<li>进一步学习虚拟网络部分的产品及服务</li>
-<li>对Azure虚拟网络主要服务进行部署和操作</li>
-</ul>
-<h3 id="Section1-虚拟网络的简单操作"><a href="#Section1-虚拟网络的简单操作" class="headerlink" title="Section1 : 虚拟网络的简单操作"></a>Section1 : 虚拟网络的简单操作</h3><p>计划用时： 5小时</p>
-<p>本部分主要内容：</p>
-<ol>
-<li>理解虚拟网络之间的默认路由规则</li>
-<li>理解虚拟网络几个主要概念和功能：网络安全组、用户自定义路由、服务终结点</li>
-<li>理解加速网络的原理和作用</li>
-<li>掌握虚拟网络之间、虚拟网络与本地之间的连接方案</li>
-</ol>
-<p>资料连接：</p>
-<ul>
-<li>网络安全组：<a href="https://docs.azure.cn/zh-cn/virtual-network/security-overview" target="_blank" rel="noopener">https://docs.azure.cn/zh-cn/virtual-network/security-overview</a></li>
-<li>虚拟网络路由规则：<a href="https://docs.azure.cn/zh-cn/virtual-network/virtual-networks-udr-overview" target="_blank" rel="noopener">https://docs.azure.cn/zh-cn/virtual-network/virtual-networks-udr-overview</a></li>
-<li>服务终结点：<a href="https://docs.azure.cn/zh-cn/virtual-network/virtual-network-service-endpoints-overview" target="_blank" rel="noopener">https://docs.azure.cn/zh-cn/virtual-network/virtual-network-service-endpoints-overview</a></li>
-<li>加速网络：<a href="https://docs.azure.cn/zh-cn/virtual-network/create-vm-accelerated-networking-cli" target="_blank" rel="noopener">https://docs.azure.cn/zh-cn/virtual-network/create-vm-accelerated-networking-cli</a></li>
-<li>创建虚拟网络对等互连：<a href="https://docs.azure.cn/zh-cn/virtual-network/tutorial-connect-virtual-networks-portal" target="_blank" rel="noopener">https://docs.azure.cn/zh-cn/virtual-network/tutorial-connect-virtual-networks-portal</a></li>
-<li>配置VNet到VNet VPN网关连接: <a href="https://docs.azure.cn/zh-cn/vpn-gateway/vpn-gateway-howto-vnet-vnet-resource-manager-portal" target="_blank" rel="noopener">https://docs.azure.cn/zh-cn/vpn-gateway/vpn-gateway-howto-vnet-vnet-resource-manager-portal</a></li>
-</ul>
-<h3 id="Section2：虚拟网络VPN网关"><a href="#Section2：虚拟网络VPN网关" class="headerlink" title="Section2：虚拟网络VPN网关"></a>Section2：虚拟网络VPN网关</h3><p>计划用时：1.5天</p>
-<p>本部分主要内容：</p>
-<ol>
-<li>理解VPN网关的作用和原理</li>
-<li>部署VPN网关的连接：点到站点的连接，站点到站点的连接</li>
-<li>了解VPN网关的SKU（型号）</li>
-<li>了解VPN网关的监视和警报</li>
-</ol>
-<p>资料连接：</p>
-<ul>
-<li>VPN网关概述：<a href="https://docs.azure.cn/zh-cn/vpn-gateway/vpn-gateway-about-vpngateways" target="_blank" rel="noopener">https://docs.azure.cn/zh-cn/vpn-gateway/vpn-gateway-about-vpngateways</a></li>
-<li>VPN网关SKU：<a href="https://docs.azure.cn/zh-cn/vpn-gateway/vpn-gateway-about-vpn-gateway-settings" target="_blank" rel="noopener">https://docs.azure.cn/zh-cn/vpn-gateway/vpn-gateway-about-vpn-gateway-settings</a></li>
-<li>什么是边界网关协议（BGP）：<a href="https://docs.azure.cn/zh-cn/vpn-gateway/vpn-gateway-bgp-overview" target="_blank" rel="noopener">https://docs.azure.cn/zh-cn/vpn-gateway/vpn-gateway-bgp-overview</a></li>
-<li>创建基于路由的VPN网关：<a href="https://docs.azure.cn/zh-cn/vpn-gateway/create-routebased-vpn-gateway-portal" target="_blank" rel="noopener">https://docs.azure.cn/zh-cn/vpn-gateway/create-routebased-vpn-gateway-portal</a></li>
-<li>配置站点到站点VPN连接：<a href="https://docs.azure.cn/zh-cn/vpn-gateway/vpn-gateway-howto-site-to-site-resource-manager-portal" target="_blank" rel="noopener">https://docs.azure.cn/zh-cn/vpn-gateway/vpn-gateway-howto-site-to-site-resource-manager-portal</a></li>
-<li>VPN网关连接到本地VPN设备：<a href="https://docs.azure.cn/zh-cn/vpn-gateway/vpn-gateway-connect-multiple-policybased-rm-ps" target="_blank" rel="noopener">https://docs.azure.cn/zh-cn/vpn-gateway/vpn-gateway-connect-multiple-policybased-rm-ps</a></li>
-<li>配置点到站点的VPN连接：<a href="https://docs.azure.cn/zh-cn/vpn-gateway/vpn-gateway-howto-point-to-site-resource-manager-portal" target="_blank" rel="noopener">https://docs.azure.cn/zh-cn/vpn-gateway/vpn-gateway-howto-point-to-site-resource-manager-portal</a></li>
-<li>VPN网关基于指标设置警报：<a href="https://docs.azure.cn/zh-cn/vpn-gateway/vpn-gateway-howto-setup-alerts-virtual-network-gateway-metric" target="_blank" rel="noopener">https://docs.azure.cn/zh-cn/vpn-gateway/vpn-gateway-howto-setup-alerts-virtual-network-gateway-metric</a></li>
-</ul>
-<h3 id="Section3-虚拟网络ExpressRoute"><a href="#Section3-虚拟网络ExpressRoute" class="headerlink" title="Section3 虚拟网络ExpressRoute"></a>Section3 虚拟网络ExpressRoute</h3><p>计划用时：5小时</p>
-<p>本部分主要内容：</p>
-<ol>
-<li>理解ExpressRoute功能及优势</li>
-<li>掌握ExpressRoute连接模型、部署方式</li>
-<li>了解ExpressRoute在多种场景下的使用方式</li>
-</ol>
-<p>资料链接：</p>
-<ul>
-<li>ExpressRoute概述：<a href="https://docs.azure.cn/zh-cn/expressroute/expressroute-introduction" target="_blank" rel="noopener">https://docs.azure.cn/zh-cn/expressroute/expressroute-introduction</a></li>
-<li>ExpressRoute连接模型：<a href="https://docs.azure.cn/zh-cn/expressroute/expressroute-connectivity-models" target="_blank" rel="noopener">https://docs.azure.cn/zh-cn/expressroute/expressroute-connectivity-models</a></li>
-<li>ExpressRoute线路和对等互连：<a href="https://docs.azure.cn/zh-cn/expressroute/expressroute-circuit-peerings" target="_blank" rel="noopener">https://docs.azure.cn/zh-cn/expressroute/expressroute-circuit-peerings</a></li>
-<li>创建ExpressRoute：<a href="https://docs.azure.cn/zh-cn/articles/azure-operations-guide/expressroute/aog-expressroute-howto-create-through-azure-portal" target="_blank" rel="noopener">https://docs.azure.cn/zh-cn/articles/azure-operations-guide/expressroute/aog-expressroute-howto-create-through-azure-portal</a></li>
-<li>将虚拟网络连接到ExpressRoute：<a href="https://docs.azure.cn/zh-cn/expressroute/expressroute-howto-linkvnet-portal-resource-manager" target="_blank" rel="noopener">https://docs.azure.cn/zh-cn/expressroute/expressroute-howto-linkvnet-portal-resource-manager</a></li>
-<li>ExpressRoute与VPN网关共存场景：<a href="https://docs.azure.cn/zh-cn/expressroute/expressroute-howto-coexist-resource-manager" target="_blank" rel="noopener">https://docs.azure.cn/zh-cn/expressroute/expressroute-howto-coexist-resource-manager</a></li>
-</ul>
-<h3 id="Section4-负载均衡器"><a href="#Section4-负载均衡器" class="headerlink" title="Section4 负载均衡器"></a>Section4 负载均衡器</h3><p>计划用时：1天</p>
-<p>本部分主要内容：</p>
-<ol>
-<li>理解负载均衡器的原理、作用和使用场景</li>
-<li>熟悉不同SKU负载均衡器之间的区别和限制</li>
-<li>掌握负载均衡器的部署方式</li>
-</ol>
-<p>资料链接：</p>
-<ul>
-<li>负载均衡器的概述：<a href="https://docs.azure.cn/zh-cn/load-balancer/load-balancer-overview" target="_blank" rel="noopener">https://docs.azure.cn/zh-cn/load-balancer/load-balancer-overview</a></li>
-<li>负载均衡器SKU（基本和标准）对比：<a href="https://docs.azure.cn/zh-cn/load-balancer/load-balancer-standard-overview" target="_blank" rel="noopener">https://docs.azure.cn/zh-cn/load-balancer/load-balancer-standard-overview</a></li>
-<li>标准负载均衡器的创建：<a href="https://docs.azure.cn/zh-cn/load-balancer/quickstart-load-balancer-standard-public-portal" target="_blank" rel="noopener">https://docs.azure.cn/zh-cn/load-balancer/quickstart-load-balancer-standard-public-portal</a></li>
-<li>在负载均衡器中配置端口转发：<a href="https://docs.azure.cn/zh-cn/load-balancer/tutorial-load-balancer-port-forwarding-portal" target="_blank" rel="noopener">https://docs.azure.cn/zh-cn/load-balancer/tutorial-load-balancer-port-forwarding-portal</a></li>
-<li>负载均衡器运行状况探测原理：<a href="https://docs.azure.cn/zh-cn/load-balancer/load-balancer-custom-probe-overview" target="_blank" rel="noopener">https://docs.azure.cn/zh-cn/load-balancer/load-balancer-custom-probe-overview</a></li>
-<li>负载均衡器的分配模式：<a href="https://docs.azure.cn/zh-cn/load-balancer/load-balancer-distribution-mode" target="_blank" rel="noopener">https://docs.azure.cn/zh-cn/load-balancer/load-balancer-distribution-mode</a></li>
-<li>Azure中的负载均衡服务：<a href="https://docs.azure.cn/zh-cn/traffic-manager/traffic-manager-load-balancing-azure?toc=%2fload-balancer%2ftoc.json" target="_blank" rel="noopener">https://docs.azure.cn/zh-cn/traffic-manager/traffic-manager-load-balancing-azure?toc=%2fload-balancer%2ftoc.json</a></li>
-</ul>
-<h3 id="Section5-应用程序网关"><a href="#Section5-应用程序网关" class="headerlink" title="Section5 应用程序网关"></a>Section5 应用程序网关</h3><p>计划用时：5小时</p>
-<p>本部分主要内容：</p>
-<ol>
-<li>理解应用程序网关的工作原理和使用场景</li>
-<li>掌握应用程序网关的SSL配置、WAF配置</li>
-<li>了解应用程序网关的运行状况探测</li>
-</ol>
-<p>资料链接</p>
-<ul>
-<li>应用程序网关概述：<a href="https://docs.azure.cn/zh-cn/application-gateway/overview" target="_blank" rel="noopener">https://docs.azure.cn/zh-cn/application-gateway/overview</a></li>
-<li>应用程序网关工作原理：<a href="https://docs.azure.cn/zh-cn/application-gateway/how-application-gateway-works" target="_blank" rel="noopener">https://docs.azure.cn/zh-cn/application-gateway/how-application-gateway-works</a></li>
-<li>应用程序网关组件：<a href="https://docs.azure.cn/zh-cn/application-gateway/application-gateway-components" target="_blank" rel="noopener">https://docs.azure.cn/zh-cn/application-gateway/application-gateway-components</a></li>
-<li>创建应用程序网关：<a href="https://docs.azure.cn/zh-cn/application-gateway/quick-create-portal" target="_blank" rel="noopener">https://docs.azure.cn/zh-cn/application-gateway/quick-create-portal</a></li>
-<li>SSL配置：<a href="https://docs.azure.cn/zh-cn/application-gateway/ssl-overview" target="_blank" rel="noopener">https://docs.azure.cn/zh-cn/application-gateway/ssl-overview</a></li>
-<li>WAF配置：<a href="https://docs.azure.cn/zh-cn/application-gateway/waf-overview" target="_blank" rel="noopener">https://docs.azure.cn/zh-cn/application-gateway/waf-overview</a></li>
-<li>运行状况探测：<a href="https://docs.azure.cn/zh-cn/application-gateway/application-gateway-probe-overview" target="_blank" rel="noopener">https://docs.azure.cn/zh-cn/application-gateway/application-gateway-probe-overview</a></li>
-</ul>
-<h3 id="Section6-流量管理器"><a href="#Section6-流量管理器" class="headerlink" title="Section6  流量管理器"></a>Section6  流量管理器</h3><p>计划用时：2小时</p>
-<p>主要内容：</p>
-<ol>
-<li>理解流量管理器的作用和工作原理</li>
-<li>掌握流量管理器的创建和使用场景</li>
-</ol>
-<p>资料链接：</p>
-<ul>
-<li>流量管理器概述：<a href="https://docs.azure.cn/zh-cn/traffic-manager/traffic-manager-overview" target="_blank" rel="noopener">https://docs.azure.cn/zh-cn/traffic-manager/traffic-manager-overview</a></li>
-<li>流量管理器工作原理：<a href="https://docs.azure.cn/zh-cn/traffic-manager/traffic-manager-how-it-works" target="_blank" rel="noopener">https://docs.azure.cn/zh-cn/traffic-manager/traffic-manager-how-it-works</a></li>
-<li>流量管理器的创建：<a href="https://docs.azure.cn/zh-cn/traffic-manager/quickstart-create-traffic-manager-profile" target="_blank" rel="noopener">https://docs.azure.cn/zh-cn/traffic-manager/quickstart-create-traffic-manager-profile</a></li>
-</ul>
-<h3 id="section7-CDN网络"><a href="#section7-CDN网络" class="headerlink" title="section7 CDN网络"></a>section7 CDN网络</h3><p>计划用时：1小时</p>
-<p>主要内容:</p>
-<ol>
-<li>理解CDN的功能及优势</li>
-<li>了解CND网络的创建</li>
-<li>了解CDN网络的管理方式</li>
-</ol>
-<p>资料链接：</p>
-<ul>
-<li>CDN网络概述：<a href="https://docs.azure.cn/zh-cn/cdn/cdn-overview" target="_blank" rel="noopener">https://docs.azure.cn/zh-cn/cdn/cdn-overview</a></li>
-<li>节点分布：<a href="https://docs.azure.cn/zh-cn/cdn/cdn-pops" target="_blank" rel="noopener">https://docs.azure.cn/zh-cn/cdn/cdn-pops</a></li>
-<li>CDN网络的创建：<a href="https://docs.azure.cn/zh-cn/cdn/cdn-how-to-use" target="_blank" rel="noopener">https://docs.azure.cn/zh-cn/cdn/cdn-how-to-use</a></li>
-<li>CDN网络控制台：<a href="https://docs.azure.cn/zh-cn/cdn/cdn-management-v2-portal-how-to-use" target="_blank" rel="noopener">https://docs.azure.cn/zh-cn/cdn/cdn-management-v2-portal-how-to-use</a></li>
-</ul>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://mspartner123.github.io/ms.github.io/2019/10/22/Week3%20Azure-Level-200/" data-id="ck232acyq000374h4hyywal8s" class="article-share-link">Share</a>
+      <a data-url="https://mspartner123.github.io/ms.github.io/2019/10/22/Week1%20Azure-Level-100/" data-id="ck232gnra0003skh48k6ne6u0" class="article-share-link">Share</a>
       
       
     </footer>
@@ -539,7 +539,7 @@
       <ul>
         
           <li>
-            <a href="/2019/10/22/Week1%20Azure-Level-100/">Week1 Azure-Level-100</a>
+            <a href="/2019/10/22/Week3%20Azure-Level-200/">Week3 Azure-Level-200</a>
           </li>
         
           <li>
@@ -547,7 +547,7 @@
           </li>
         
           <li>
-            <a href="/2019/10/22/Week3%20Azure-Level-200/">Week3 Azure-Level-200</a>
+            <a href="/2019/10/22/Week1%20Azure-Level-100/">Week1 Azure-Level-100</a>
           </li>
         
       </ul>
